@@ -2,7 +2,7 @@ import telebot
 import requests
 import random
 
-API_key=("1973829382:AAEPzeQgP4z-m9jEaE7vddr7aKon18QQQ3w")
+API_key=("") #add your own api key here 
 bot = telebot.TeleBot(API_key)
 
 
