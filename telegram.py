@@ -82,8 +82,8 @@ def fetch_news(message, article_count):
 
             title = article["title"]
             description = article["description"]
-            content = article["content"]
-            news = f"{title}\n\nDescription: {description}\n\nContent: {content}"
+            url = article["url"]
+            news = f"{title}\n\n Description: {description}\n\n link to full Article: {url}"
             bot.send_message(message.chat.id, news)
 
     except (requests.RequestException, KeyError):
